@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Barra de Envío Gratuito -->
+<div class="free-shipping-bar">¡Envío gratis a todo Colombia!</div>
+
+<!-- Barra de Navegación -->
+<nav class="navbar">
+    <ul class="nav-menu">
+        <li class="shop-menu">
+            <a href="#" id="shopLink">Shop</a>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <div class="menu-item">
+                    <a href="Makeup.html">
+                        <img src="makeup.jpg" alt="Maquillaje">
+                        <p>Maquillaje</p>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Skincare.html">
+                        <img src="skincare.jpg" alt="Cuidado Facial">
+                        <p>Cuidado Facial</p>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Makeup.html">
+                        <img src="Piel.jpg" alt="Cuidado de Piel">
+                        <p>Cuidado de Piel</p>
+                    </a>
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="LOGO.png" alt="Logo">
+        </a>
+    </div>
+
+    <div class="cart">
+        <span class="icon-cart">🛒</span>
+    </div>
+
+     <!-- Carrito -->
+  <div class="cart-modal" id="cartModal">
+    <h2>Tu Carrito</h2>
+    <div class="cart-items" id="cartItems"></div>
+    <p id="totalPrice">Total: $0</p>
+    <button id="checkoutBtn">Comprar</button>
+</div>
+    
+    <div class="cart-modal" id="cartModal">
+        <h2>Tu Carrito</h2>
+        <div class="cart-items" id="cartItems"></div>
+        <p id="totalPrice">Total: $0</p>
+        <button id="checkoutBtn">Comprar</button>
+    </div>
+</nav>
+
+
+
+
+   
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-item active">
+            <div class="carousel-image">
+                <img src="imagen 1.jpg" alt="Imagen 1">
+            </div>
+            <div class="carousel-text">
+                <h2>NEW </h2>
+                <h3>Makeup Collection</h3>
+                <p>Descubre lo nuevo en maquillaje. ¡Tu belleza, realzada de forma natural! Explora fórmulas ligeras que se adaptan a tu piel, brindándote un acabado radiante y fresco. Atrévete a resaltar tu esencia con cada aplicación.</p>
+                <a href="Makeup.html" class="carousel-button">Ver Colección</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-image">
+                <img src="imagen 2.png" alt="Imagen 2">
+            </div>
+            <div class="carousel-text">
+                <h2>NOW</h2>
+                <h3>Cuida tu piel</h3>
+                <p>Cuidado facial diario para una piel perfecta, ideal para cada piel. Nuestros productos realzan la belleza única de cada mujer. ¡Despierta con un brillo radiante y saludable cada día!</p>
+                <a href="Skincare.html" class="carousel-button">Explora Skincare</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-image">
+                <img src="imagen 3.webp" alt="Imagen 3">
+            </div>
+            <div class="carousel-text">
+                <h2>Cuidado Completo para tu Piel</h2>
+                <p>Descubre nuestra línea de productos para el cuidado de la piel. Mantén tu piel suave, radiante y saludable con fórmulas diseñadas para cada tipo de necesidad. ¡Renueva tu rutina de cuidado y siéntete increíble cada día!</p>
+                <a href="Cuidadopiel.html" class="carousel-button">Más información</a>
+            </div>
+        </div>
+
+    
+        </div>
+    </div>
+    <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+
+
+        <section class="tips-section">
+            <div class="tips-container">
+                <div class="tip" style="background-image: url('TIPS.png');">
+                    <a href="https://www.maybelline.co/consejos-de-maquillaje" class="tip-link">
+                        <h2>Makeup tips</h2>
+                        <p>OJOS, ROSTRO, LABIOS ;ÚLTIMAS NOVEDADES · LABIOS NEGROS · COLORIMETRÍA DEL MAQUILLAJE · COMO PINTAR LA LÍNEA DEL OJO SI LOS TIENES PEQUEÑOS · ¿CÓMO MAQUILLAR LOS LABIOS EN FORMA DE ....</p>
+                    </a>
+                </div>
+                <div class="tip" style="background-image: url('Cuidado\ playa.jpg');">
+                    <a href="https://blogdemaquillaje.com/2023/08/indispensables-cuidado-piel-verano.html" class="tip-link">
+                        <h2>Indispensables para el cuidado de la piel en verano</h2>
+                        <p>Que hay que cuidarse la piel todo el año está ya más que claro. Pero también es cierto que hay momentos en los que la piel tiene necesidades especiales y debemos darle unos cuidados extra.</p>
+                    </a>
+                </div>
+               
+            </div>
+        </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
